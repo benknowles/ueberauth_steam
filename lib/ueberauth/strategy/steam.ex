@@ -3,7 +3,7 @@ defmodule Ueberauth.Strategy.Steam do
   Steam OpenID for Überauth.
   """
 
-  use Ueberauth.Strategy
+  use Ueberauth.Strategy, ignores_csrf_attack: true
   alias Ueberauth.Auth.Info
   alias Ueberauth.Auth.Extra
   
